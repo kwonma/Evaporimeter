@@ -1,6 +1,6 @@
 /* Authors: Chet Udell, Marissa Kwon, Thomas DeBell
-    Date: 06/26/2017
-    THIS CODE IS IN COMPLETE AS OF 6/28/17 at 5:37 p.m do
+    Date: 08/04/2017
+    
   Description: Code for "Transmitter" LoRa radio Feather Board; initilizes
   LoRa radio transmitter and sends data to LoRa receiver on the same
   frequency.
@@ -267,7 +267,7 @@ void loop() {
     Serial.println("Sending to rf95_server");
 #endif
     //begin sending to data to receiver (loops 3x)
-    for (int count = 0; count <= 3; count++) {
+    for (int count = 0; count < 3; count++) {
       int receivedID = 0;
       if(resFlag == false)
       {
